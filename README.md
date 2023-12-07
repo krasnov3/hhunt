@@ -1,6 +1,6 @@
 
 
-##  :tangerine: Usage
+##  :suspect: Usage
 
 ```bash
 usage: h8mail [-h] [-t USER_TARGETS [USER_TARGETS ...]]
@@ -77,7 +77,7 @@ optional arguments:
 
 -----
 
-## :tangerine: Usage examples
+## :hurtrealbad: Usage examples
 
 ###### Query for a single target
 
