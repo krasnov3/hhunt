@@ -128,7 +128,7 @@ $ h8mail -t 42.202.0.42 -q ip -c h8mail_config_priv.ini -ch 2 --power-chase
 
 
 ```bash
-$ h8mail -u "https://pastebin.com/raw/kQ6WNKqY" "list_of_urls.txt"
+$ h8mail -u "https://pastebin.com/raw/EPe2pakW" "list_of_urls.txt"
 ```
 
 
