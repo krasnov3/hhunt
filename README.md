@@ -82,53 +82,53 @@ optional arguments:
 ###### Query for a single target
 
 ```bash
-$ h8mail -t target@example.com
+$ hhmail -t target@example.com
 ```
 
 ###### Query for list of targets, indicate config file for API keys, output to `pwned_targets.csv`
 ```bash
-$ h8mail -t targets.txt -c config.ini -o pwned_targets.csv
+$ hhmail -t targets.txt -c config.ini -o pwned_targets.csv
 ```
 
 ###### Query a list of targets against local copy of the Breach Compilation, pass API key for [Snusbase](https://snusbase.com/) from the command line
 ```bash
-$ h8mail -t targets.txt -bc ../Downloads/BreachCompilation/ -k "snusbase_token=$snusbase_token"
+$ hhmail -t targets.txt -bc ../Downloads/BreachCompilation/ -k "snusbase_token=$snusbase_token"
 ```
 
 ###### Query without making API calls against local copy of the Breach Compilation
 ```bash
-$ h8mail -t targets.txt -bc ../Downloads/BreachCompilation/ -sk
+$ hhmail -t targets.txt -bc ../Downloads/BreachCompilation/ -sk
 ```
 
 ###### Search every .gz file for targets found in targets.txt locally, skip default checks
 
 ```bash
-$ h8mail -t targets.txt -gz /tmp/Collection1/ -sk
+$ hhmail -t targets.txt -gz /tmp/Collection1/ -sk
 ```
 
 ###### Check a cleartext dump for target. Add the next 10 related emails to targets to check. Read keys from CLI
 
 ```bash
-$ h8mail -t admin@evilcorp.com -lb /tmp/4k_Combo.txt -ch 10 -k "hunterio=ABCDE123"
+$ hhmail -t admin@evilcorp.com -lb /tmp/4k_Combo.txt -ch 10 -k "hunterio=ABCDE123"
 ```
 ###### Query username. Read keys from CLI
 
 ```bash
-$ h8mail -t JSmith89 -q username -k "dehashed_email=user@email.com" "dehashed_key=ABCDE123"
+$ hhmail -t JSmith89 -q username -k "dehashed_email=user@email.com" "dehashed_key=ABCDE123"
 ```
 
 ###### Query IP. Chase all related targets. Read keys from CLI
 
 
 ```bash
-$ h8mail -t 42.202.0.42 -q ip -c h8mail_config_priv.ini -ch 2 --power-chase
+$ hhmail -t 42.202.0.42 -q ip -c hhmail_config_priv.ini -ch 2 --power-chase
 ```
 
 ###### Fetch URL content (CLI + file). Target all found emails
 
 
 ```bash
-$ h8mail -u "https://pastebin.com/raw/EPe2pakW" "list_of_urls.txt"
+$ hhmail -u "https://pastebin.com/raw/EPe2pakW" "list_of_urls.txt"
 ```
 
 
