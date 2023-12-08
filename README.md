@@ -3,7 +3,7 @@
 ##  :suspect: Usage
 
 ```bash
-usage: h8mail [-h] [-t USER_TARGETS [USER_TARGETS ...]]
+usage: hhunt [-h] [-t USER_TARGETS [USER_TARGETS ...]]
               [-u USER_URLS [USER_URLS ...]] [-q USER_QUERY] [--loose]
               [-c CONFIG_FILE [CONFIG_FILE ...]] [-o OUTPUT_FILE]
               [-j OUTPUT_JSON] [-bc BC_PATH] [-sk]
@@ -71,7 +71,7 @@ optional arguments:
   --debug               Print request debug information
   --gen-config, -g      Generates a configuration file template in the current
                         working directory & exits. Will overwrite existing
-                        h8mail_config.ini file
+                        hhunt_config.ini file
 
 ```
 
