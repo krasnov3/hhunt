@@ -82,53 +82,53 @@ optional arguments:
 ###### Query for a single target
 
 ```bash
-$ hhmail -t target@example.com
+$ hhunt -t target@example.com
 ```
 
 ###### Query for list of targets, indicate config file for API keys, output to `pwned_targets.csv`
 ```bash
-$ hhmail -t targets.txt -c config.ini -o pwned_targets.csv
+$ hhunt -t targets.txt -c config.ini -o pwned_targets.csv
 ```
 
 ###### Query a list of targets against local copy of the Breach Compilation, pass API key for [Snusbase](https://snusbase.com/) from the command line
 ```bash
-$ hhmail -t targets.txt -bc ../Downloads/BreachCompilation/ -k "snusbase_token=$snusbase_token"
+$ hhunt -t targets.txt -bc ../Downloads/BreachCompilation/ -k "snusbase_token=$snusbase_token"
 ```
 
 ###### Query without making API calls against local copy of the Breach Compilation
 ```bash
-$ hhmail -t targets.txt -bc ../Downloads/BreachCompilation/ -sk
+$ hhunt -t targets.txt -bc ../Downloads/BreachCompilation/ -sk
 ```
 
 ###### Search every .gz file for targets found in targets.txt locally, skip default checks
 
 ```bash
-$ hhmail -t targets.txt -gz /tmp/Collection1/ -sk
+$ hhunt -t targets.txt -gz /tmp/Collection1/ -sk
 ```
 
 ###### Check a cleartext dump for target. Add the next 10 related emails to targets to check. Read keys from CLI
 
 ```bash
-$ hhmail -t admin@evilcorp.com -lb /tmp/4k_Combo.txt -ch 10 -k "hunterio=ABCDE123"
+$ hhunt -t admin@evilcorp.com -lb /tmp/4k_Combo.txt -ch 10 -k "hunterio=ABCDE123"
 ```
 ###### Query username. Read keys from CLI
 
 ```bash
-$ hhmail -t JSmith89 -q username -k "dehashed_email=user@email.com" "dehashed_key=ABCDE123"
+$ hhunt -t JSmith89 -q username -k "dehashed_email=user@email.com" "dehashed_key=ABCDE123"
 ```
 
 ###### Query IP. Chase all related targets. Read keys from CLI
 
 
 ```bash
-$ hhmail -t 42.202.0.42 -q ip -c hhmail_config_priv.ini -ch 2 --power-chase
+$ hhunt -t 42.202.0.42 -q ip -c hhunt_config_priv.ini -ch 2 --power-chase
 ```
 
 ###### Fetch URL content (CLI + file). Target all found emails
 
 
 ```bash
-$ hhmail -u "https://pastebin.com/raw/EPe2pakW" "list_of_urls.txt"
+$ hhunt -u "https://pastebin.com/raw/EPe2pakW" "list_of_urls.txt"
 ```
 
 
